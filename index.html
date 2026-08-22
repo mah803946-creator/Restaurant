@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ember & Olive | Modern American Restaurant</title>
+
+  <meta
+    name="description"
+    content="Discover seasonal American cuisine, handcrafted dishes, and warm hospitality at Ember & Olive in Austin, Texas."
+  >
+
+  <meta property="og:title" content="Ember & Olive | Modern American Restaurant">
+  <meta
+    property="og:description"
+    content="Modern flavors. Timeless moments."
+  >
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="header" id="header">
+
+    <a href="#home" class="logo">
+      Ember <span>&</span> Olive
+    </a>
+
+    <nav class="nav" id="nav">
+
+      <a href="#home">Home</a>
+      <a href="#story">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+
+      <a href="#reservation" class="nav-button">
+        Reserve a Table
+      </a>
+
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+  </header>
+
+
+  <!-- ================= HERO ================= -->
+
+  <main>
+
+    <section class="hero" id="home">
+
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="restaurant-poster.jpg"
+      >
+        <source src="restaurant-video.mp4" type="video/mp4">
+      </video>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+
+        <p class="eyebrow">WELCOME TO EMBER & OLIVE</p>
+
+        <h1>
+          Modern flavors.<br>
+          <span>Timeless moments.</span>
+        </h1>
+
+        <p class="hero-description">
+          Seasonal ingredients, thoughtful cooking, and unforgettable
+          dining in the heart of Austin.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#reservation" class="btn btn-primary">
+            Reserve a Table
+          </a>
+
+          <a href="#menu" class="btn btn-outline">
+            Explore Our Menu
+          </a>
+
+        </div>
+
+      </div>
+
+      <a href="#featured" class="scroll-down">
+        <span>Scroll to explore</span>
+        <i class="fa-solid fa-arrow-down"></i>
+      </a>
+
+    </section>
+
+
+    <!-- ================= INTRO ================= -->
+
+    <section class="intro" id="featured">
+
+      <div class="section-heading reveal">
+
+        <p class="eyebrow dark">FROM OUR KITCHEN</p>
+
+        <h2>
+          Crafted with passion.<br>
+          <span>Served with purpose.</span>
+        </h2>
+
+        <p>
+          Thoughtfully prepared with seasonal ingredients and bold,
+          balanced flavors.
+        </p>
+
+      </div>
+
+      <div class="dish-grid">
+
+        <article class="dish-card reveal">
+
+          <div class="dish-image">
+            <img
+              src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85"
+              alt="Charred filet"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="dish-info">
+            <div>
+              <h3>Charred Filet</h3>
+              <p>Herb butter, roasted vegetables, red wine jus.</p>
+            </div>
+
+            <strong>$38</strong>
+          </div>
+
+        </article>
+
+
+        <article class="dish-card reveal">
+
+          <div class="dish-image">
+            <img
+              src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=900&q=85"
+              alt="Wild mushroom risotto"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="dish-info">
+            <div>
+              <h3>Wild Mushroom Risotto</h3>
+              <p>Parmesan, roasted mushrooms, herbs.</p>
+            </div>
+
+            <strong>$26</strong>
+          </div>
+
+        </article>
+
+
+        <article class="dish-card reveal">
+
+          <div class="dish-image">
+            <img
+              src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=900&q=85"
+              alt="Seared salmon"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="dish-info">
+            <div>
+              <h3>Seared Salmon</h3>
+              <p>Lemon beurre blanc, asparagus, crispy potatoes.</p>
+            </div>
+
+            <strong>$32</strong>
+          </div>
+
+        </article>
+
+
+        <article class="dish-card reveal">
+
+          <div class="dish-image">
+            <img
+              src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85"
+              alt="Chocolate torte"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="dish-info">
+            <div>
+              <h3>Chocolate Torte</h3>
+              <p>Dark chocolate, vanilla cream, seasonal berries.</p>
+            </div>
+
+            <strong>$12</strong>
+          </div>
+
+        </article>
+
+      </div>
+
+      <a href="#menu" class="text-button">
+        View Full Menu
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+    </section>
+
+
+    <!-- ================= STORY ================= -->
+
+    <section class="story section-dark" id="story">
+
+      <div class="story-image reveal">
+
+        <img
+          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85"
+          alt="Ember and Olive restaurant interior"
+          loading="lazy"
+        >
+
+      </div>
+
+      <div class="story-content reveal">
+
+        <p class="eyebrow">OUR STORY</p>
+
+        <h2>
+          A table worth<br>
+          <span>gathering around.</span>
+        </h2>
+
+        <p>
+          Ember & Olive brings together modern American cooking,
+          seasonal ingredients, and warm hospitality.
+        </p>
+
+        <p>
+          Our kitchen celebrates familiar flavors while giving every
+          dish a thoughtful contemporary touch. Every plate is prepared
+          with intention, and every guest is welcomed like family.
+        </p>
+
+        <a href="#reservation" class="btn btn-primary">
+          Experience Ember & Olive
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= WHY US ================= -->
+
+    <section class="why-us">
+
+      <div class="section-heading reveal">
+
+        <p class="eyebrow dark">THE EMBER & OLIVE EXPERIENCE</p>
+
+        <h2>
+          Made for <span>memorable moments.</span>
+        </h2>
+
+      </div>
+
+      <div class="features">
+
+        <div class="feature reveal">
+          <div class="feature-icon">
+            <i class="fa-solid fa-leaf"></i>
+          </div>
+          <h3>Seasonal Ingredients</h3>
+          <p>Fresh ingredients selected at their peak.</p>
+        </div>
+
+        <div class="feature reveal">
+          <div class="feature-icon">
+            <i class="fa-solid fa-hat-chef"></i>
+          </div>
+          <h3>Chef-Crafted Menu</h3>
+          <p>Thoughtful dishes created with creativity.</p>
+        </div>
+
+        <div class="feature reveal">
+          <div class="feature-icon">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <h3>Warm Hospitality</h3>
+          <p>Service designed to make you feel at home.</p>
+        </div>
+
+        <div class="feature reveal">
+          <div class="feature-icon">
+            <i class="fa-solid fa-wine-glass"></i>
+          </div>
+          <h3>Memorable Atmosphere</h3>
+          <p>An elegant space made for gathering.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= MENU ================= -->
+
+    <section class="menu-section section-dark" id="menu">
+
+      <div class="section-heading reveal">
+
+        <p class="eyebrow">OUR MENU</p>
+
+        <h2>
+          Something for <span>every occasion.</span>
+        </h2>
+
+      </div>
+
+      <div class="menu-tabs">
+
+        <button class="menu-tab active" data-category="starters">
+          Starters
+        </button>
+
+        <button class="menu-tab" data-category="mains">
+          Main Courses
+        </button>
+
+        <button class="menu-tab" data-category="desserts">
+          Desserts
+        </button>
+
+        <button class="menu-tab" data-category="drinks">
+          Drinks
+        </button>
+
+      </div>
+
+
+      <div class="menu-items" id="menuItems">
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PROMOTION ================= -->
+
+    <section class="promotion">
+
+      <div class="promotion-overlay"></div>
+
+      <div class="promotion-content reveal">
+
+        <p class="eyebrow">SEASONAL EXPERIENCE</p>
+
+        <h2>
+          Make it a night<br>
+          <span>to remember.</span>
+        </h2>
+
+        <p>
+          Join us for our seasonal three-course dinner experience,
+          thoughtfully created by our chef.
+        </p>
+
+        <a href="#reservation" class="btn btn-primary">
+          Reserve Your Table
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= VIDEO EXPERIENCE ================= -->
+
+    <section class="experience-video">
+
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="restaurant-poster.jpg"
+      >
+        <source src="restaurant-video.mp4" type="video/mp4">
+      </video>
+
+      <div class="experience-overlay"></div>
+
+      <div class="experience-content reveal">
+
+        <p class="eyebrow">THE EXPERIENCE</p>
+
+        <h2>
+          More than<br>
+          <span>a meal.</span>
+        </h2>
+
+        <p>
+          From the first pour to the final bite, every detail is
+          designed to make your evening memorable.
+        </p>
+
+        <a href="#reservation" class="btn btn-primary">
+          Reserve Your Table
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+
+    <section class="gallery-section" id="gallery">
+
+      <div class="section-heading reveal">
+
+        <p class="eyebrow dark">A GLIMPSE INSIDE</p>
+
+        <h2>
+          The <span>Ember & Olive</span> atmosphere.
+        </h2>
+
+      </div>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item large reveal">
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85"
+            alt="Restaurant interior"
+          >
+        </div>
+
+        <div class="gallery-item reveal">
+          <img
+            src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85"
+            alt="Fresh restaurant dish"
+          >
+        </div>
+
+        <div class="gallery-item reveal">
+          <img
+            src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=85"
+            alt="Restaurant food"
+          >
+        </div>
+
+        <div class="gallery-item reveal">
+          <img
+            src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=85"
+            alt="Restaurant dessert"
+          >
+        </div>
+
+        <div class="gallery-item reveal">
+          <img
+            src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=900&q=85"
+            alt="Restaurant dining table"
+          >
+        </div>
+
+        <div class="gallery-item reveal">
+          <img
+            src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=900&q=85"
+            alt="Restaurant wine"
+          >
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= REVIEWS ================= -->
+
+    <section class="reviews section-dark" id="reviews">
+
+      <div class="section-heading reveal">
+
+        <p class="eyebrow">GUEST EXPERIENCES</p>
+
+        <h2>
+          Words from<br>
+          <span>our guests.</span>
+        </h2>
+
+        <p class="demo-label">
+          Sample testimonials for demonstration purposes.
+        </p>
+
+      </div>
+
+      <div class="reviews-grid">
+
+        <article class="review-card reveal">
+
+          <div class="stars">★★★★★</div>
+
+          <p>
+            “Beautiful atmosphere, incredible food, and genuinely warm
+            service. Every dish felt thoughtfully prepared.”
+          </p>
+
+          <strong>Sarah M.</strong>
+
+        </article>
+
+
+        <article class="review-card reveal">
+
+          <div class="stars">★★★★★</div>
+
+          <p>
+            “One of the best dining experiences we've had in Austin.
+            The salmon was absolutely outstanding.”
+          </p>
+
+          <strong>Michael R.</strong>
+
+        </article>
+
+
+        <article class="review-card reveal">
+
+          <div class="stars">★★★★★</div>
+
+          <p>
+            “Perfect place for a special evening. Elegant without feeling
+            pretentious, and the staff were wonderful.”
+          </p>
+
+          <strong>Jessica T.</strong>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= RESERVATION ================= -->
+
+    <section class="reservation" id="reservation">
+
+      <div class="reservation-content reveal">
+
+        <p class="eyebrow dark">JOIN US</p>
+
+        <h2>
+          Reserve<br>
+          <span>your table.</span>
+        </h2>
+
+        <p>
+          Planning a special evening? Send us a reservation request
+          and we'll get back to you shortly.
+        </p>
+
+        <div class="reservation-info">
+
+          <div>
+            <i class="fa-regular fa-clock"></i>
+            <span>Open 7 days a week</span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Austin, Texas</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <form class="reservation-form reveal" id="reservationForm">
+
+        <div class="form-row">
+
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              required
+              placeholder="Your name"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="you@example.com"
+            >
+          </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input
+              type="tel"
+              id="phone"
+              required
+              placeholder="(555) 000-0000"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="guests">Guests</label>
+
+            <select id="guests" required>
+
+              <option value="">Select</option>
+              <option>1 Guest</option>
+              <option>2 Guests</option>
+              <option>3 Guests</option>
+              <option>4 Guests</option>
+              <option>5 Guests</option>
+              <option>6+ Guests</option>
+
+            </select>
+
+          </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" id="date" required>
+          </div>
+
+          <div class="form-group">
+            <label for="time">Time</label>
+
+            <select id="time" required>
+
+              <option value="">Select</option>
+              <option>5:00 PM</option>
+              <option>5:30 PM</option>
+              <option>6:00 PM</option>
+              <option>6:30 PM</option>
+              <option>7:00 PM</option>
+              <option>7:30 PM</option>
+              <option>8:00 PM</option>
+              <option>8:30 PM</option>
+
+            </select>
+
+          </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="requests">Special Requests</label>
+
+          <textarea
+            id="requests"
+            rows="4"
+            placeholder="Tell us anything we should know..."
+          ></textarea>
+
+        </div>
+
+        <button type="submit" class="btn btn-dark">
+          Request Reservation
+        </button>
+
+        <p class="form-message" id="formMessage"></p>
+
+        <small class="demo-label">
+          Demo form — no real reservation will be made.
+        </small>
+
+      </form>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact section-dark" id="contact">
+
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+
+          <p class="eyebrow">COME VISIT US</p>
+
+          <h2>
+            Let's share<br>
+            <span>a table.</span>
+          </h2>
+
+          <div class="contact-details">
+
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+
+              <div>
+                <h3>Location</h3>
+                <p>
+                  123 Example Street<br>
+                  Austin, TX 78701
+                </p>
+              </div>
+
+            </div>
+
+
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+
+              <div>
+                <h3>Phone</h3>
+                <p>(512) 555-0187</p>
+              </div>
+
+            </div>
+
+
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+
+              <div>
+                <h3>Email</h3>
+                <p>hello@emberandolive.com</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <a href="#reservation" class="btn btn-primary">
+            Reserve a Table
+          </a>
+
+        </div>
+
+
+        <div class="hours reveal">
+
+          <h3>Opening Hours</h3>
+
+          <div class="hours-row">
+            <span>Monday — Thursday</span>
+            <strong>11 AM — 9 PM</strong>
+          </div>
+
+          <div class="hours-row">
+            <span>Friday — Saturday</span>
+            <strong>11 AM — 10 PM</strong>
+          </div>
+
+          <div class="hours-row">
+            <span>Sunday</span>
+            <strong>11 AM — 8 PM</strong>
+          </div>
+
+          <div class="map-box">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <span>Austin, Texas</span>
+
+            <small>
+              Demo map area
+            </small>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="footer">
+
+    <div class="footer-main">
+
+      <div class="footer-brand">
+
+        <a href="#home" class="logo">
+          Ember <span>&</span> Olive
+        </a>
+
+        <p>
+          Modern flavors. Timeless moments.
+        </p>
+
+        <div class="socials">
+
+          <a href="#" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="#" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="#" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <h4>Quick Links</h4>
+
+        <a href="#home">Home</a>
+        <a href="#story">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+
+      </div>
+
+
+      <div class="footer-contact">
+
+        <h4>Contact</h4>
+
+        <p>123 Example Street</p>
+        <p>Austin, TX 78701</p>
+        <p>(512) 555-0187</p>
+        <p>hello@emberandolive.com</p>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>
+        © 2026 Ember & Olive. Demo website.
+      </span>
+
+      <span class="demo-label">
+        DEMO WEBSITE
+      </span>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ================= LIGHTBOX ================= -->
+
+  <div class="lightbox" id="lightbox">
+
+    <button class="lightbox-close" id="lightboxClose">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <img id="lightboxImage" src="" alt="Gallery preview">
+
+  </div>
+
+
+  <!-- ================= BACK TO TOP ================= -->
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
